@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 export default function HomePage() {
   const fullText =
-    "Welcome to my portfolio! I am a passionate web developer from Oberhausen, specializing in modern JavaScript frameworks, Node.js, and Tailwind CSS. Explore my skills, projects, and get to know more about me.";
+    "Welcome to my portfolio! I am a passionate web developer from Nordrhein-Westfalen Oberhausen, specializing in modern JavaScript frameworks, Node.js, and Tailwind CSS. Explore my skills, projects, and get to know more about me.";
   const [displayedText, setDisplayedText] = useState("");
 
   useEffect(() => {

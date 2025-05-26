@@ -1,43 +1,26 @@
-const projects = [
-  {
-    name: "Abschluss-Projekt-javascribt",
-    description: "",
-    language: "JavaScript",
-  },
-  {
-    name: "online-shop",
-    description: "Warenkauf-Option",
-    language: "JavaScript",
-  },
-  {
-    name: "Color-Picker-Tool",
-    description: "Color-Picker-Tool-Projekt",
-    language: "JavaScript",
-  },
-  {
-    name: "Random-Quote-Generator",
-    description: "Random-Quote-Generator",
-    language: "JavaScript",
-  },
-];
 export default function ProjectsPage() {
   return (
-    <section>
-      <h2 className="text-3xl font-bold mb-6">Meine Projekte</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {projects.map((project) => (
-          <div
-            key={project.name}
-            className="border border-gray-700 p-4 rounded-lg"
-          >
-            <h3 className="text-xl font-semibold">{project.name}</h3>
-            <p className="text-gray-400">{project.description}</p>
-            <p className="text-sm text-gray-500 mt-2">
-              Sprache: {project.language}
-            </p>
-          </div>
-        ))}
-      </div>
-    </section>
+    <div className="max-w-md mx-auto bg-gray-800 rounded-xl shadow-md overflow-hidden hover:shadow-purple-500/40 transition-shadow duration-300">
+      <a
+        href="https://auto-nextjs-project-ebon.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block"
+      >
+        <div className="p-6">
+          <h3 className="text-2xl font-bold text-white mb-2">
+            Auto Next.js Projekt
+          </h3>
+          <p className="text-gray-300 mb-4">
+            Ein modernes Next.js Projekt mit Tailwind CSS. Responsives Design
+            und optimiert für Performance. Ideal für Automobil- oder
+            Showcase-Zwecke.
+          </p>
+          <span className="inline-block px-4 py-2 text-sm font-medium text-white bg-amber-300 rounded hover:bg-green-600 transition">
+            Projekt ansehen →
+          </span>
+        </div>
+      </a>
+    </div>
   );
 }
