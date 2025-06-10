@@ -35,7 +35,7 @@ export default function SkillsSection() {
           <div
             key={index}
             className={`
-              transform transition duration-500 ease-out
+              transform transition duration-400 ease-out
               opacity-0 translate-y-6
               ${showSkills ? "opacity-100 translate-y-0" : ""}
               delay-${index * 100}
