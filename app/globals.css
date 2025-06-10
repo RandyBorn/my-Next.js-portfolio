@@ -44,11 +44,11 @@ body {
 @keyframes kenburns-right {
   10% {
     transform: scale(1) translate(0, 0);
-    transform-origin: 8% 25%;
+    transform-origin: 8% 55%;
   }
   20% {
     transform: scale(1) translateX(100px);
-    transform-origin: right;
+    transform-origin: 10% 55%;
   }
 }
 
