@@ -1,5 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
+import Link from "next/link";
+import "./globals.css";
 
 export default function HomePage() {
   const fullText =
@@ -18,35 +20,38 @@ export default function HomePage() {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center px-7 text-white max-w-4xl mx-auto">
-      <h1
-        className="text-5xl sm:text-6xl font-extrabold text-center
-                   bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500
+    <div>
+      <div className="flex flex-col items-center justify-center px-7 text-white max-w-4xl mx-auto">
+        <h1
+          className="text-5xl sm:text-6xl font-extrabold text-center
+                   bg-gradient-to-r from-gray-600 via-purple-500 to-blue-500
                    bg-clip-text text-transparent animate-gradient
-                   mb-6"
-      >
-        Hallo zusammen! Ich bin Randy Born 👋
-      </h1>
-
-      <p className="max-w-xl text-center text-lg sm:text-xl leading-relaxed whitespace-pre-wrap">
-        {displayedText}
-        <span className="animate-blink">|</span>
-      </p>
-
-      <div className="mt-8">
-        <a
-          href="/about"
-          className="bg-blue-600 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded transition-colors duration-400"
+                   mb-9"
         >
-          Über mich
-        </a>
+          Hallo zusammen! Ich bin Randy Born 👋
+        </h1>
+        <p className="max-w-xl text-center text-lg sm:text-xl leading-relaxed whitespace-pre-wrap h-24">
+          {displayedText}
+          <span className="animate-blink">|</span>
+        </p>
+
+        <div className="mt-20">
+          <a
+            href="/about"
+            className="bg-blue-600 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded transition-colors duration-400"
+          >
+            Über mich
+          </a>
+        </div>
       </div>
 
-      <section className="  mt-16 max-w-4xl mx-auto space-y-8">
-        <h2 className="text-3xl font-semibold mb-4 text-center">
+      <div>
+        <h2 className="text-3xl font-semibold mb-2 mt-20 text-center text-amber-50">
           Technologien und Tools
         </h2>
+      </div>
 
+      <section className="mt-10 max-w-4xl mx-auto space-y-8 kenburns-right">
         <p
           className=" bg-white/20 
           backdrop-blur-md 
@@ -102,7 +107,7 @@ export default function HomePage() {
           hover:bg-white/30
           transition-colors duration-200"
         >
-          <strong>JavaScript (ES6+)</strong>
+          <strong>JavaScript ES6+</strong>
           <br />
           JavaScript ist die Programmiersprache, die Webseiten interaktiv macht.
           ES6+ bezeichnet die neueren Versionen von JavaScript, die viele
@@ -297,12 +302,12 @@ export default function HomePage() {
       </section>
 
       <div className="mt-16 text-center">
-        <a
+        <Link
           href="/"
           className="inline-block bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold py-2 px-6 rounded-full shadow-lg hover:from-purple-500 hover:to-blue-500 transition-all duration-300"
         >
           Zur Startseite
-        </a>
+        </Link>
       </div>
     </div>
   );

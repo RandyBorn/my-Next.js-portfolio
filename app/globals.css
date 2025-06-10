@@ -38,6 +38,20 @@ body {
 }
 
 .animate-gradient {
-  background-size: 300% 300%;
-  animation: gradient 5s ease infinite;
+  background-size: 50% 80%;
+  animation: gradient 50s ease infinite;
+}
+@keyframes kenburns-right {
+  10% {
+    transform: scale(1) translate(0, 0);
+    transform-origin: 8% 25%;
+  }
+  20% {
+    transform: scale(1) translateX(100px);
+    transform-origin: right;
+  }
+}
+
+.kenburns-right {
+  animation: kenburns-right 5s ease-out both;
 }

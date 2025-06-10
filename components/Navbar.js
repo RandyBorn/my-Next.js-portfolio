@@ -16,8 +16,7 @@ export default function Navbar() {
   const pathname = usePathname(); // <--- NEU
 
   return (
-    <nav className="bg-gray-900 text-gray-300 p-4 transition-colors duration-300 hover:bg-black">
-      {/* Mobile Menü Button */}
+    <nav className="bg-gray-900 text-gray-300 p-4 transition-colors duration-300 hover:bg-gray-800">
       <div className="flex justify-between items-center md:hidden">
         <div className="text-xl font-bold">Mein Portfolio</div>
         <button
@@ -29,7 +28,6 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Dropdown */}
       {isOpen && (
         <div className="flex flex-col mt-2 space-y-2 md:hidden">
           {links.map((link) => {
