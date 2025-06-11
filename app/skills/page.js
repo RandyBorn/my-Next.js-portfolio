@@ -26,7 +26,7 @@ export default function SkillsSection() {
 
   return (
     <section className="my-16">
-      <h2 className="text-3xl font-bold text-center mb-10">
+      <h2 className="text-3xl font-bold text-amber-50 text-center mb-10">
         ⚙️ Tech Stack/Skills
       </h2>
 

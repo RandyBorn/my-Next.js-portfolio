@@ -53,16 +53,19 @@ export default function HomePage() {
 
       <section className="mt-10 max-w-4xl mx-auto space-y-8 kenburns-right">
         <p
-          className=" bg-white/20 
-          backdrop-blur-md 
-          shadow-lg 
-          rounded-xl 
-          p-6 
-          space-y-6 
-          text-white
-          border border-white/50
-          hover:bg-white/30
-          transition-colors duration-200"
+          className="bg-white/20 
+    backdrop-blur-md 
+    shadow-lg 
+    rounded-xl 
+    p-6 
+    space-y-6 
+    text-white
+    border border-white/50
+    hover:bg-white/30
+    hover:scale-105
+    active:scale-105
+    transform 
+    transition duration-200"
         >
           <strong>HTML5</strong>
           <br />
@@ -74,16 +77,19 @@ export default function HomePage() {
         </p>
 
         <p
-          className=" bg-white/20 
-          backdrop-blur-md 
-          shadow-lg 
-          rounded-xl 
-          p-6 
-          space-y-6 
-          text-white
-          border border-white/50
-          hover:bg-white/30
-          transition-colors duration-200"
+          className="bg-white/20 
+    backdrop-blur-md 
+    shadow-lg 
+    rounded-xl 
+    p-6 
+    space-y-6 
+    text-white
+    border border-white/50
+    hover:bg-white/30
+    hover:scale-105
+    active:scale-105
+    transform 
+    transition duration-200"
         >
           <strong>CSS3 / SASS</strong>
           <br />
@@ -96,16 +102,19 @@ export default function HomePage() {
         </p>
 
         <p
-          className=" bg-white/20 
-          backdrop-blur-md 
-          shadow-lg 
-          rounded-xl 
-          p-6 
-          space-y-6 
-          text-white
-          border border-white/50
-          hover:bg-white/30
-          transition-colors duration-200"
+          className="bg-white/20 
+    backdrop-blur-md 
+    shadow-lg 
+    rounded-xl 
+    p-6 
+    space-y-6 
+    text-white
+    border border-white/50
+    hover:bg-white/30
+    hover:scale-105
+    active:scale-105
+    transform 
+    transition duration-200"
         >
           <strong>JavaScript ES6+</strong>
           <br />
@@ -118,16 +127,19 @@ export default function HomePage() {
         </p>
 
         <p
-          className=" bg-white/20 
-          backdrop-blur-md 
-          shadow-lg 
-          rounded-xl 
-          p-6 
-          space-y-6 
-          text-white
-          border border-white/50
-          hover:bg-white/30
-          transition-colors duration-200"
+          className="bg-white/20 
+    backdrop-blur-md 
+    shadow-lg 
+    rounded-xl 
+    p-6 
+    space-y-6 
+    text-white
+    border border-white/50
+    hover:bg-white/30
+    hover:scale-105
+    active:scale-105
+    transform 
+    transition duration-200"
         >
           <strong>React</strong>
           <br />
@@ -139,16 +151,19 @@ export default function HomePage() {
         </p>
 
         <p
-          className=" bg-white/20 
-          backdrop-blur-md 
-          shadow-lg 
-          rounded-xl 
-          p-6 
-          space-y-6 
-          text-white
-          border border-white/50
-          hover:bg-white/30
-          transition-colors duration-200"
+          className="bg-white/20 
+    backdrop-blur-md 
+    shadow-lg 
+    rounded-xl 
+    p-6 
+    space-y-6 
+    text-white
+    border border-white/50
+    hover:bg-white/30
+    hover:scale-105
+    active:scale-105
+    transform 
+    transition duration-200"
         >
           <strong>Node.js / Express</strong>
           <br />
@@ -160,16 +175,19 @@ export default function HomePage() {
         </p>
 
         <p
-          className=" bg-white/20 
-          backdrop-blur-md 
-          shadow-lg 
-          rounded-xl 
-          p-6 
-          space-y-6 
-          text-white
-          border border-white/50
-          hover:bg-white/30
-          transition-colors duration-200"
+          className="bg-white/20 
+    backdrop-blur-md 
+    shadow-lg 
+    rounded-xl 
+    p-6 
+    space-y-6 
+    text-white
+    border border-white/50
+    hover:bg-white/30
+    hover:scale-105
+    active:scale-105
+    transform 
+    transition duration-200"
         >
           <strong>MongoDB / Mongoose</strong>
           <br />
@@ -181,16 +199,19 @@ export default function HomePage() {
         </p>
 
         <p
-          className=" bg-white/20 
-          backdrop-blur-md 
-          shadow-lg 
-          rounded-xl 
-          p-6 
-          space-y-6 
-          text-white
-          border border-white/50
-          hover:bg-white/30
-          transition-colors duration-200"
+          className="bg-white/20 
+    backdrop-blur-md 
+    shadow-lg 
+    rounded-xl 
+    p-6 
+    space-y-6 
+    text-white
+    border border-white/50
+    hover:bg-white/30
+    hover:scale-105
+    active:scale-105
+    transform 
+    transition duration-200"
         >
           <strong>TailwindCSS</strong>
           <br />
@@ -201,16 +222,19 @@ export default function HomePage() {
         </p>
 
         <p
-          className=" bg-white/20 
-          backdrop-blur-md 
-          shadow-lg 
-          rounded-xl 
-          p-6 
-          space-y-6 
-          text-white
-          border border-white/50
-          hover:bg-white/30
-          transition-colors duration-200"
+          className="bg-white/20 
+    backdrop-blur-md 
+    shadow-lg 
+    rounded-xl 
+    p-6 
+    space-y-6 
+    text-white
+    border border-white/50
+    hover:bg-white/30
+    hover:scale-105
+    active:scale-105
+    transform 
+    transition duration-200"
         >
           <strong>Git & GitHub</strong>
           <br />
@@ -222,16 +246,19 @@ export default function HomePage() {
         </p>
 
         <p
-          className=" bg-white/20 
-          backdrop-blur-md 
-          shadow-lg 
-          rounded-xl 
-          p-6 
-          space-y-6 
-          text-white
-          border border-white/50
-          hover:bg-white/30
-          transition-colors duration-200"
+          className="bg-white/20 
+    backdrop-blur-md 
+    shadow-lg 
+    rounded-xl 
+    p-6 
+    space-y-6 
+    text-white
+    border border-white/50
+    hover:bg-white/30
+    hover:scale-105
+    active:scale-105
+    transform 
+    transition duration-200"
         >
           <strong>Markdown</strong>
           <br />
@@ -241,16 +268,19 @@ export default function HomePage() {
         </p>
 
         <p
-          className=" bg-white/20 
-          backdrop-blur-md 
-          shadow-lg 
-          rounded-xl 
-          p-6 
-          space-y-6 
-          text-white
-          border border-white/50
-          hover:bg-white/30
-          transition-colors duration-200"
+          className="bg-white/20 
+    backdrop-blur-md 
+    shadow-lg 
+    rounded-xl 
+    p-6 
+    space-y-6 
+    text-white
+    border border-white/50
+    hover:bg-white/30
+    hover:scale-105
+    active:scale-105
+    transform 
+    transition duration-200"
         >
           <strong>Vercel / Netlify</strong>
           <br />
@@ -261,16 +291,19 @@ export default function HomePage() {
         </p>
 
         <p
-          className=" bg-white/20 
-          backdrop-blur-md 
-          shadow-lg 
-          rounded-xl 
-          p-6 
-          space-y-6 
-          text-white
-          border border-white/50
-          hover:bg-white/30
-          transition-colors duration-200"
+          className="bg-white/20 
+    backdrop-blur-md 
+    shadow-lg 
+    rounded-xl 
+    p-6 
+    space-y-6 
+    text-white
+    border border-white/50
+    hover:bg-white/30
+    hover:scale-105
+    active:scale-105
+    transform 
+    transition duration-200"
         >
           <strong>Postman</strong>
           <br />
@@ -281,16 +314,19 @@ export default function HomePage() {
         </p>
 
         <p
-          className=" bg-white/20 
-          backdrop-blur-md 
-          shadow-lg 
-          rounded-xl 
-          p-6 
-          space-y-6 
-          text-white
-          border border-white/50
-          hover:bg-white/30
-          transition-colors duration-200"
+          className="bg-white/20 
+    backdrop-blur-md 
+    shadow-lg 
+    rounded-xl 
+    p-6 
+    space-y-6 
+    text-white
+    border border-white/50
+    hover:bg-white/30
+    hover:scale-105
+    active:scale-105
+    transform 
+    transition duration-200"
         >
           <strong>VS Code</strong>
           <br />
