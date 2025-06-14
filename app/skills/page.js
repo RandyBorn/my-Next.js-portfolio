@@ -8,7 +8,7 @@ const skills = [
   "React",
   "Node.js / Express",
   "MongoDB / Mongoose",
-  "TailwindCSS",
+  "Tailwind / CSS",
   "Git & GitHub",
   "Markdown",
   "Vercel / Netlify",
