@@ -1,8 +1,32 @@
 export default function ProjectsPage() {
   return (
     <div className="max-w-md mx-auto space-y-20 m-18">
-      {/* Erstes Projekt */}
+      {/* Erstes Projekt: Globale Themen */}
       <div className="bg-gray-800 rounded-xl shadow-md overflow-hidden hover:shadow-purple-500/100 transition-shadow duration-700 kenburns-bottom">
+        <a
+          href="https://globale-themen.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block"
+        >
+          <div className="p-8">
+            <h3 className="text-2xl font-bold text-white mb-2">
+              Globale Themen
+            </h3>
+            <p className="text-gray-300 mb-9">
+              Eine HTML/CSS Webseite über globale Herausforderungen wie Umwelt,
+              Bildung und Gesundheit. Mit Kontaktformular und Scroll-Animation
+              modern umgesetzt.
+            </p>
+            <span className="inline-block px-4 py-2 text-sm font-medium text-white bg-amber-300 rounded hover:bg-green-600 transition">
+              Projekt ansehen →
+            </span>
+          </div>
+        </a>
+      </div>
+
+      {/* Zweites Projekt */}
+      <div className="bg-gray-800 rounded-xl shadow-md overflow-hidden hover:shadow-purple-500/90 transition-shadow duration-300 kenburns-bottom">
         <a
           href="https://auto-nextjs-project-ebon.vercel.app/"
           target="_blank"
@@ -25,7 +49,7 @@ export default function ProjectsPage() {
         </a>
       </div>
 
-      {/* Zweites Projekt */}
+      {/* Drittes Projekt */}
       <div className="bg-gray-800 rounded-xl shadow-md overflow-hidden hover:shadow-purple-500/90 transition-shadow duration-300 kenburns-bottom">
         <a
           href="https://fullstack-frontend-backend-book-tra.vercel.app/"
@@ -49,7 +73,7 @@ export default function ProjectsPage() {
         </a>
       </div>
 
-      {/* Drittes Projekt */}
+      {/* Viertes Projekt */}
       <div className="bg-gray-800 rounded-xl shadow-md overflow-hidden hover:shadow-purple-500/90 transition-shadow duration-300 kenburns-bottom">
         <a
           href="https://projekt-bay-eight.vercel.app/"
@@ -63,8 +87,8 @@ export default function ProjectsPage() {
             </h3>
             <p className="text-gray-300 mb-9">
               Eine kreative Webanwendung mit HTML und CSS. Fokus auf Design,
-              Struktur und Performance. Mein Erstes Anfangsprojekt ideal für
-              Fitness-Studios
+              Struktur und Performance. Mein Erstes Anfangsprojekt – ideal für
+              Fitness-Studios.
             </p>
             <span className="inline-block px-4 py-2 text-sm font-medium text-white bg-amber-300 rounded hover:bg-green-600 transition">
               Projekt ansehen →
