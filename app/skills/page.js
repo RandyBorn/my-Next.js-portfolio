@@ -26,11 +26,11 @@ export default function SkillsSection() {
 
   return (
     <section className="my-16">
-      <h2 className="text-3xl font-bold wrap-normal text-amber-50 text-center mb-50">
+      <h2 className="text-3xl font-bold text-amber-50 text-center mb-50">
         ⚙️ Tech Stack/Skills
       </h2>
 
-      <div className="grid grid-cols-3 sm:grid-cols-3 gap-15 max-w-7xl mx-auto kenburns-bottom">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7 max-w-1xl mx-auto p-4 kenburns-bottom ">
         {skills.map((skill, index) => (
           <div
             key={index}
