@@ -70,10 +70,9 @@ export default function HomePage() {
           <strong>HTML5</strong>
           <br />
           HTML5 ist die neueste Version der Sprache, mit der Webseiten
-          strukturiert werden. Es sorgt dafür, dass Texte, Bilder, Videos und
-          andere Inhalte auf allen Geräten und Browsern richtig dargestellt
-          werden. Durch HTML5 können auch moderne Multimedia-Inhalte einfach
-          eingebunden werden, ohne dass zusätzliche Plugins nötig sind
+          strukturiert werden. Damit kann ich dafür sorgen, dass Texte, Bilder,
+          Videos und andere Inhalte auf allen Geräten und Browsern richtig
+          dargestellt werden.
         </p>
 
         <p
@@ -93,12 +92,13 @@ export default function HomePage() {
         >
           <strong>CSS3 / SASS</strong>
           <br />
-          CSS3 bestimmt das Aussehen der Webseite – Farben, Schriften, Abstände
-          und das Layout. Mit CSS wird aus einer einfachen HTML-Struktur eine
-          ansprechende und benutzerfreundliche Seite. SASS ist eine Erweiterung
-          von CSS, die das Schreiben von Design-Regeln deutlich erleichtert. Es
-          ermöglicht zum Beispiel das Verwenden von Variablen und Funktionen,
-          was die Wartung und Erweiterung von Designs viel einfacher macht.
+          Mit CSS3 gestalte ich das Aussehen meiner Webseite – Farben,
+          Schriften, Abstände und das gesamte Layout. Dadurch wird aus einer
+          einfachen HTML-Struktur eine ansprechende und benutzerfreundliche
+          Seite. SASS nutze ich als Erweiterung von CSS, um Design-Regeln
+          effizienter zu schreiben. Es ermöglicht mir zum Beispiel, Variablen
+          und Funktionen zu verwenden, was die Wartung und Erweiterung meiner
+          Designs deutlich erleichtert.
         </p>
 
         <p
@@ -118,12 +118,12 @@ export default function HomePage() {
         >
           <strong>JavaScript ES6+</strong>
           <br />
-          JavaScript ist die Programmiersprache, die Webseiten interaktiv macht.
-          ES6+ bezeichnet die neueren Versionen von JavaScript, die viele
-          moderne Funktionen bieten und das Programmieren einfacher und
-          effizienter machen. Mit JavaScript können zum Beispiel Formulare
-          überprüft, Inhalte dynamisch geändert oder Animationen erstellt
-          werden.
+          JavaScript setze ich ein, um meine Webseiten interaktiv zu machen. Die
+          neueren Versionen, bekannt als ES6+, bieten viele moderne Funktionen,
+          die mir das Programmieren einfacher und effizienter machen. Mit
+          JavaScript überprüfe ich beispielsweise Formulare, ändere Inhalte
+          dynamisch oder erstelle Animationen, um die Benutzererfahrung zu
+          verbessern.
         </p>
 
         <p
@@ -143,11 +143,11 @@ export default function HomePage() {
         >
           <strong>React</strong>
           <br />
-          React ist eine Bibliothek, mit der man komplexe Benutzeroberflächen in
-          kleine, wiederverwendbare Komponenten zerlegen kann. So lassen sich
-          große Webseiten übersichtlich und schnell entwickeln. React ermöglicht
-          zudem, dass Nutzer sofort sehen, wenn sich Daten ändern, ohne die
-          ganze Seite neu laden zu müssen.
+          Mit React entwickle ich komplexe Benutzeroberflächen, indem ich sie in
+          kleine, wiederverwendbare Komponenten zerlege. Dadurch kann ich auch
+          große Webseiten übersichtlich und effizient umsetzen. Besonders
+          schätze ich an React, dass Änderungen an Daten sofort sichtbar werden
+          – ganz ohne die gesamte Seite neu laden zu müssen.
         </p>
 
         <p
@@ -167,11 +167,11 @@ export default function HomePage() {
         >
           <strong>Node.js / Express</strong>
           <br />
-          Node.js erlaubt es, JavaScript auf dem Server auszuführen. Zusammen
-          mit dem Framework Express wird der Server programmiert, der z. B.
-          Anfragen von Nutzern empfängt, verarbeitet und entsprechende Antworten
-          zurückschickt. So kann die Webseite Daten speichern, Benutzer
-          verwalten oder Nachrichten austauschen.
+          Mit Node.js kann ich JavaScript auch auf dem Server ausführen. In
+          Kombination mit dem Framework Express programmiere ich Server, die
+          Anfragen von Nutzern empfangen, verarbeiten und passende Antworten
+          zurückschicken. So ermögliche ich es meiner Webseite, Daten zu
+          speichern, Benutzer zu verwalten oder Nachrichten zu versenden.
         </p>
 
         <p
@@ -191,11 +191,11 @@ export default function HomePage() {
         >
           <strong>MongoDB / Mongoose</strong>
           <br />
-          MongoDB ist eine moderne Datenbank, die besonders flexibel mit Daten
-          umgehen kann. Sie speichert Informationen in sogenannten „Dokumenten“,
-          was gut zu Webprojekten passt. Mongoose ist eine Bibliothek, die dabei
-          hilft, Datenmodelle zu erstellen und die Datenbank einfach zu
-          bedienen.
+          Für meine Webprojekte verwende ich MongoDB, eine moderne und flexible
+          Datenbank, die Informationen in sogenannten „Dokumenten“ speichert –
+          ideal für dynamische Anwendungen. Mit der Bibliothek Mongoose erstelle
+          ich strukturierte Datenmodelle und kann die Datenbank effizient und
+          unkompliziert ansprechen.
         </p>
 
         <p
@@ -215,10 +215,11 @@ export default function HomePage() {
         >
           <strong>TailwindCSS</strong>
           <br />
-          TailwindCSS ist ein modernes CSS-Framework, das viele fertige Klassen
-          bereitstellt, um schnell und systematisch das Aussehen von Webseiten
-          zu gestalten. Es sorgt für ein einheitliches Design und reduziert die
-          Menge an eigenem CSS-Code.
+          TailwindCSS setze ich ein, um das Design meiner Webseiten schnell und
+          systematisch umzusetzen. Das moderne CSS-Framework stellt mir viele
+          vorgefertigte Klassen zur Verfügung, mit denen ich ein einheitliches
+          Erscheinungsbild erreiche – ganz ohne große Mengen an eigenem CSS-Code
+          schreiben zu müssen.
         </p>
 
         <p
@@ -238,11 +239,11 @@ export default function HomePage() {
         >
           <strong>Git & GitHub</strong>
           <br />
-          Git ist ein System zur Versionskontrolle – es speichert alle
-          Änderungen am Code und ermöglicht es, zu älteren Versionen
-          zurückzukehren oder gleichzeitig an verschiedenen Funktionen zu
-          arbeiten. GitHub ist eine Plattform, auf der Entwickler ihre Projekte
-          online speichern, teilen und gemeinsam bearbeiten können.
+          Git nutze ich als Versionskontrollsystem, um alle Änderungen an meinem
+          Code nachvollziehbar zu speichern. So kann ich jederzeit zu früheren
+          Versionen zurückkehren oder parallel an verschiedenen Funktionen
+          arbeiten. Mit GitHub speichere ich meine Projekte online, teile sie
+          mit anderen und arbeite gemeinsam mit anderen Entwicklern daran.
         </p>
 
         <p
@@ -330,10 +331,10 @@ export default function HomePage() {
         >
           <strong>VS Code</strong>
           <br />
-          Visual Studio Code ist ein beliebter Code-Editor, der viele praktische
-          Funktionen wie Autovervollständigung, Fehleranzeige und Erweiterungen
-          bietet. Er hilft Entwicklern, effizienter und mit weniger Fehlern zu
-          programmieren.
+          Visual Studio Code ist mein bevorzugter Code-Editor, da er viele
+          praktische Funktionen wie Autovervollständigung, Fehleranzeige und
+          eine große Auswahl an Erweiterungen bietet. Mit diesen Tools kann ich
+          effizienter arbeiten und Fehler schneller erkennen und beheben.
         </p>
       </section>
 
