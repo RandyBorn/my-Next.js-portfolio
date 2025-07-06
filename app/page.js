@@ -92,13 +92,13 @@ export default function HomePage() {
         >
           <strong>CSS3 / SASS</strong>
           <br />
-          Mit CSS3 gestalte ich das Aussehen meiner Webseite – Farben,
-          Schriften, Abstände und das gesamte Layout. Dadurch wird aus einer
-          einfachen HTML-Struktur eine ansprechende und benutzerfreundliche
-          Seite. SASS nutze ich als Erweiterung von CSS, um Design-Regeln
-          effizienter zu schreiben. Es ermöglicht mir zum Beispiel, Variablen
-          und Funktionen zu verwenden, was die Wartung und Erweiterung meiner
-          Designs deutlich erleichtert.
+          Mit CSS3 gestalte ich das Aussehen meiner Webseite Farben, Schriften,
+          Abstände und das gesamte Layout. Dadurch wird aus einer einfachen
+          HTML-Struktur eine ansprechende und benutzerfreundliche Seite. SASS
+          nutze ich als Erweiterung von CSS, um Design-Regeln effizienter zu
+          schreiben. Es ermöglicht mir zum Beispiel, Variablen und Funktionen zu
+          verwenden, was die Wartung und Erweiterung meiner Designs deutlich
+          erleichtert.
         </p>
 
         <p
@@ -147,7 +147,7 @@ export default function HomePage() {
           kleine, wiederverwendbare Komponenten zerlege. Dadurch kann ich auch
           große Webseiten übersichtlich und effizient umsetzen. Besonders
           schätze ich an React, dass Änderungen an Daten sofort sichtbar werden
-          – ganz ohne die gesamte Seite neu laden zu müssen.
+          ganz ohne die gesamte Seite neu laden zu müssen.
         </p>
 
         <p
@@ -192,7 +192,7 @@ export default function HomePage() {
           <strong>MongoDB / Mongoose</strong>
           <br />
           Für meine Webprojekte verwende ich MongoDB, eine moderne und flexible
-          Datenbank, die Informationen in sogenannten „Dokumenten“ speichert –
+          Datenbank, die Informationen in sogenannten „Dokumenten“ speichert
           ideal für dynamische Anwendungen. Mit der Bibliothek Mongoose erstelle
           ich strukturierte Datenmodelle und kann die Datenbank effizient und
           unkompliziert ansprechen.
@@ -218,7 +218,7 @@ export default function HomePage() {
           TailwindCSS setze ich ein, um das Design meiner Webseiten schnell und
           systematisch umzusetzen. Das moderne CSS-Framework stellt mir viele
           vorgefertigte Klassen zur Verfügung, mit denen ich ein einheitliches
-          Erscheinungsbild erreiche – ganz ohne große Mengen an eigenem CSS-Code
+          Erscheinungsbild erreiche ganz ohne große Mengen an eigenem CSS-Code
           schreiben zu müssen.
         </p>
 
@@ -264,7 +264,7 @@ export default function HomePage() {
           <strong>Markdown</strong>
           <br />
           Markdown ist eine einfache Auszeichnungssprache, mit der man Texte
-          schnell und übersichtlich formatieren kann – ideal für Dokumentationen
+          schnell und übersichtlich formatieren kann ideal für Dokumentationen
           oder Blogbeiträge.
         </p>
 
