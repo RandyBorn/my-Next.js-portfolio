@@ -35,7 +35,7 @@ export default function HomePage() {
           <span className="animate-blink">|</span>
         </p>
 
-        <div className="mt-20">
+        <div className="mt-40">
           <a
             href="/about"
             className="bg-blue-600 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded transition-colors duration-400"
