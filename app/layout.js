@@ -1,3 +1,4 @@
+// app/layout.js
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
@@ -19,7 +20,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-black text-white">
+      {/* Body nutzt deine CSS-Variablen und die vorhandene .animate-gradient Animation */}
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} animate-gradient`}
+      >
         <Navbar />
         <main className="p-6 max-w-4xl mx-auto">{children}</main>
       </body>

@@ -1,129 +1,173 @@
+"use client";
+
+import { motion } from "framer-motion";
+
+const projects = [
+  {
+    title: "Projekt Liefrik – Lieferando-Klon",
+    href: "https://liefrik.vercel.app/",
+    badge: "Abschlussprojekt",
+    description:
+      "E2E Essensbestell‑Plattform: Restaurants anlegen, Speisekarten anzeigen, Warenkorb & Checkout, Benutzer‑Auth (Rollen: Admin/User), Bestell‑ und Admin‑Verwaltung.",
+    stack: ["Next.js", "React", "Node.js", "Express", "MongoDB", "JWT"],
+    cta: "Live ansehen",
+  },
+  {
+    title: "Globale Themen Projekt",
+    href: "https://globale-themen.vercel.app/",
+    description:
+      "Moderne HTML/CSS‑Seite über globale Herausforderungen (Umwelt, Bildung, Gesundheit) mit Kontaktformular und sanften Scroll‑Animationen.",
+    stack: ["HTML", "CSS", "JavaScript"],
+    cta: "Live ansehen",
+  },
+  {
+    title: "Auto Next.js Projekt",
+    href: "https://auto-nextjs-project-ebon.vercel.app/",
+    description:
+      "Responsives Next.js‑Template mit TailwindCSS – optimiert für Performance, ideal als Produkt‑/Showcase‑Basis.",
+    stack: ["Next.js", "TailwindCSS"],
+    cta: "Live ansehen",
+  },
+  {
+    title: "Jobportal Backend API",
+    href: "https://backend-test-gbj6.onrender.com/",
+    description:
+      "REST‑API für ein Jobportal (Node.js/Express/MongoDB). Unternehmen posten Jobs, Bewerbende bewerben sich. Sichtbar über API‑Clients wie Postman.",
+    stack: ["Node.js", "Express", "MongoDB", "REST"],
+    cta: "API öffnen",
+  },
+  {
+    title: "Fullstack Book Tracker",
+    href: "https://fullstack-frontend-backend-book-tra.vercel.app/",
+    description:
+      "React‑Frontend + Express‑Backend mit Benutzer‑Auth und Buchverwaltung. Responsiv und auf Performance getrimmt.",
+    stack: ["React", "Node.js", "Express", "MongoDB", "JWT"],
+    cta: "Live ansehen",
+  },
+  {
+    title: "Projekt GYM FIT",
+    href: "https://projekt-bay-eight.vercel.app/",
+    description:
+      "Kreative One‑Pager‑Webapp mit Fokus auf klares Layout, saubere Struktur und schnelle Ladezeiten – ideal für Fitness‑Studios.",
+    stack: ["HTML", "CSS"],
+    cta: "Live ansehen",
+  },
+];
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 24 },
+  show: (i = 0) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: 0.05 * i, duration: 0.45, ease: [0.22, 1, 0.36, 1] },
+  }),
+};
+
+function ProjectCard({ p, index }) {
+  return (
+    <motion.li
+      variants={fadeUp}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, margin: "-10%" }}
+      custom={index}
+      className="group list-none"
+    >
+      {/* Gradient border */}
+      <div className="relative rounded-2xl p-[1px] bg-gradient-to-br from-amber-300/70 via-purple-500/40 to-blue-600/50 transition-transform duration-300 group-hover:scale-[1.01]">
+        <a
+          href={p.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`${p.title} – ${p.cta}`}
+          className="block h-full"
+        >
+          <div className="rounded-2xl bg-gray-900/90 backdrop-blur-sm shadow-[0_10px_40px_rgba(0,0,0,0.35)] ring-1 ring-white/5 overflow-hidden">
+            <div className="p-6 md:p-8">
+              <div className="flex items-start justify-between gap-4 mb-4">
+                <h3 className="text-xl md:text-2xl font-semibold text-white leading-tight">
+                  {p.title}
+                </h3>
+                {p.badge && (
+                  <span className="shrink-0 inline-flex items-center gap-1 rounded-full bg-amber-300 text-gray-900 text-[10px] md:text-xs font-semibold px-2.5 py-1">
+                    <span className="size-1.5 rounded-full bg-gray-900/60" />
+                    {p.badge}
+                  </span>
+                )}
+              </div>
+
+              <p className="text-sm md:text-base text-gray-300/90 leading-relaxed mb-6">
+                {p.description}
+              </p>
+
+              {p.stack?.length > 0 && (
+                <ul className="flex flex-wrap gap-2 mb-6">
+                  {p.stack.map((t) => (
+                    <li
+                      key={t}
+                      className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-gray-200"
+                    >
+                      {t}
+                    </li>
+                  ))}
+                </ul>
+              )}
+
+              <div className="flex items-center justify-between">
+                <span className="inline-flex items-center gap-2 text-amber-300 group-hover:text-white transition-colors text-sm font-medium">
+                  {p.cta} <span aria-hidden>→</span>
+                </span>
+
+                {/* Subtle hover flourish */}
+                <span className="opacity-0 group-hover:opacity-100 transition-opacity text-xs text-white/50">
+                  Neue Seite öffnet sich
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </motion.li>
+  );
+}
+
 export default function ProjectsPage() {
   return (
-    <div className="max-w-5xl mx-auto my-18 px-4">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-30">
-        {/* Erstes Projekt: Globale Themen */}
-        <div className="bg-gray-800 rounded-xl hover:bg-blue-950 shadow-md overflow-hidden hover:shadow-purple-500/100 transition-shadow duration-700 kenburns-bottom">
-          <a
-            href="https://globale-themen.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block"
-          >
-            <div className="p-8">
-              <h3 className="text-2xl font-bold text-white mb-2">
-                Globale Themen
-              </h3>
-              <p className="text-gray-300 mb-9">
-                Eine HTML/CSS Webseite über globale Herausforderungen wie
-                Umwelt, Bildung und Gesundheit. Mit Kontaktformular und
-                Scroll-Animation modern umgesetzt.
-              </p>
-              <span className="inline-block px-4 py-2 text-sm font-medium text-white bg-amber-300 rounded hover:bg-green-600 transition">
-                Projekt ansehen →
-              </span>
-            </div>
-          </a>
-        </div>
-
-        {/* Zweites Projekt */}
-        <div className="bg-gray-800 rounded-xl hover:bg-blue-950 shadow-md overflow-hidden hover:shadow-purple-500/90 transition-shadow duration-300 kenburns-bottom">
-          <a
-            href="https://auto-nextjs-project-ebon.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block"
-          >
-            <div className="p-8">
-              <h3 className="text-2xl font-bold text-white mb-2">
-                Auto Next.js Projekt
-              </h3>
-              <p className="text-gray-300 mb-9">
-                Ein modernes Next.js Projekt mit Tailwind CSS. Responsives
-                Design und optimiert für Performance. Ideal für Automobil- oder
-                Showcase-Zwecke.
-              </p>
-              <span className="inline-block px-4 py-2 text-sm font-medium text-white bg-amber-300 rounded hover:bg-green-600 transition">
-                Projekt ansehen →
-              </span>
-            </div>
-          </a>
-        </div>
-
-        {/* Drittes Projekt: Jobportal Backend */}
-        <div className="bg-gray-800 rounded-xl hover:bg-blue-950 shadow-md overflow-hidden hover:shadow-purple-500/90 transition-shadow duration-300 kenburns-bottom">
-          <a
-            href="https://backend-test-gbj6.onrender.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block"
-          >
-            <div className="p-6">
-              <h3 className="text-2xl font-bold text-white mb-2">
-                Jobportal Backend API
-              </h3>
-              <p className="text-gray-300 mb-9">
-                Eine REST-API für ein Jobportal, entwickelt mit Node.js, Express
-                und MongoDB. Unternehmen können Jobs veröffentlichen, Bewerber
-                sich bewerben. Die API ist keine Webseite, sondern nur über das
-                Terminal oder API-Clients (z.B. Postman) sichtbar.
-              </p>
-              <span className="inline-block px-4 py-2 text-sm font-medium text-white bg-amber-300 rounded hover:bg-green-600 transition">
-                API öffnen →
-              </span>
-            </div>
-          </a>
-        </div>
-
-        {/* Viertes Projekt */}
-        <div className="bg-gray-800 rounded-xl shadow-md hover:bg-blue-950 overflow-hidden hover:shadow-purple-500/90 transition-shadow duration-300 kenburns-bottom">
-          <a
-            href="https://fullstack-frontend-backend-book-tra.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block"
-          >
-            <div className="p-6">
-              <h3 className="text-2xl font-bold text-white mb-2">
-                Fullstack Book Tracker
-              </h3>
-              <p className="text-gray-300 mb-9">
-                Ein Fullstack-Projekt mit React-Frontend und
-                Node.js/Express-Backend, inklusive Benutzer-Authentifizierung
-                und Buchverwaltung, Responsives Design und optimierte
-                Performance.
-              </p>
-              <span className="inline-block px-4 py-2 text-sm font-medium text-white bg-amber-300 rounded hover:bg-green-600 transition">
-                Projekt ansehen →
-              </span>
-            </div>
-          </a>
-        </div>
-
-        {/* Fünftes Projekt */}
-        <div className="bg-gray-800 rounded-xl shadow-md hover:bg-blue-950 overflow-hidden hover:shadow-purple-500/90 transition-shadow duration-300 kenburns-bottom">
-          <a
-            href="https://projekt-bay-eight.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block"
-          >
-            <div className="p-6">
-              <h3 className="text-2xl font-bold text-white mb-2">
-                Projekt GYM FIT
-              </h3>
-              <p className="text-gray-300 mb-9">
-                Eine kreative Webanwendung mit HTML und CSS. Fokus auf Design,
-                Struktur und Performance. Mein Erstes Anfangsprojekt – ideal für
-                Fitness-Studios.
-              </p>
-              <span className="inline-block px-4 py-2 text-sm font-medium text-white bg-amber-300 rounded hover:bg-green-600 transition">
-                Projekt ansehen →
-              </span>
-            </div>
-          </a>
-        </div>
+    <div className="relative">
+      {/* Background accents */}
+      <div aria-hidden className="pointer-events-none absolute inset-0 -z-1">
+        <div className="absolute -top-24 -left-24 h-72 w-72 bg-purple-600/20 blur-3xl rounded-full" />
+        <div className="absolute -bottom-24 -right-24 h-72 w-72 bg-amber-400/20 blur-3xl rounded-full" />
       </div>
+
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-20">
+        {/* Header */}
+        <motion.header
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+          className="mb-10 md:mb-14"
+        >
+          <p className="text-xs uppercase tracking-[0.2em] text-white/60 mb-2">
+            Ausgewählte Arbeiten
+          </p>
+          <h2 className="text-2xl md:text-4xl font-bold text-white leading-tight">
+            Projekte, die zeigen, wie ich Produkte baue
+          </h2>
+          <p className="mt-3 text-sm md:text-base text-white/70 max-w-2xl">
+            Von Full‑Stack‑Apps mit Auth & Bestell‑Flow bis hin zu API‑Services
+            und performanten Frontends. Fokus: saubere Architektur, Developer‑UX
+            und reale Use‑Cases.
+          </p>
+        </motion.header>
+
+        {/* Grid */}
+        <ul className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 lg:gap-10">
+          {projects.map((p, i) => (
+            <ProjectCard key={p.title} p={p} index={i} />
+          ))}
+        </ul>
+      </section>
     </div>
   );
 }

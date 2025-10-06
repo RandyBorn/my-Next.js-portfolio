@@ -39,7 +39,7 @@ export default function SkillsSection() {
               opacity-0 translate-y-6
               ${showSkills ? "opacity-100 translate-y-0" : ""}
               delay-${index * 100}
-              bg-purple-600 text-amber-50 px-4 py-3 rounded-xl text-center shadow-md hover:scale-105 hover:bg-purple-600 hover:text-white cursor-default
+              bg-white text-sky-900 px-4 py-3 rounded-xl text-center  cursor-default
             `}
             style={{ transitionDelay: `${index * 700}ms` }}
           >

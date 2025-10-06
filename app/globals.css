@@ -1,20 +1,41 @@
 @import "tailwindcss";
-
 :root {
-  --background: var(--genz-color-gray-900, #0f172a);
+  --background: radial-gradient(
+      900vmax 140vmax at 12% 36%,
+      rgba(0, 39, 102, 0.61) 0%,
+      rgba(37, 109, 226, 0) 60%
+    ),
+    radial-gradient(
+      180vmax 120vmax at 85% 22%,
+      rgba(2, 32, 165, 0.45) 0%,
+      rgba(43, 70, 187, 0) 55%
+    ),
+    radial-gradient(
+      220vmax 160vmax at 50% 120%,
+      rgba(32, 35, 199, 0.35) 0%,
+      rgba(99, 102, 241, 0) 65%
+    ),
+    linear-gradient(120deg, #0b1220 0%, #0f1730 50%, #0b1220 100%);
   --foreground: #171717;
 }
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: radial-gradient(
+        200vmax 140vmax at 14% 16%,
+        rgba(17, 53, 112, 0.856) 0%,
+        rgba(59, 130, 246, 0) 60%
+      ),
+      radial-gradient(
+        180vmax 120vmax at 88% 20%,
+        rgba(43, 41, 158, 0.42) 0%,
+        rgba(14, 165, 233, 0) 56%
+      ),
+      radial-gradient(
+        220vmax 120vmax at 52% 118%,
+        rgba(37, 40, 218, 0.281) 0%,
+        rgba(99, 102, 241, 0) 66%
+      ),
+      linear-gradient(120deg, #081022 0%, #0a142b 50%, #081022 100%);
     --foreground: #ededed;
   }
 }
