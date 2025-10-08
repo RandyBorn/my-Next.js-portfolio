@@ -26,7 +26,7 @@ export default function AboutPage() {
               {/* Avatar placeholder (optional) */}
               <div className="shrink-0 hidden md:block">
                 <div
-                  className="h-20 w-20 rounded-full bg-gradient-to-tr from-amber-300/80 to-purple-500/70 ring-2 ring-white/30"
+                  className="h-20 w-20 rounded-full bg-gradient-to-tr from-amber-300/80 to-blue-900 ring-2 ring-white/30"
                   aria-hidden
                 />
               </div>
