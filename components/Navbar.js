@@ -58,7 +58,7 @@ export default function Navbar() {
               aria-label="Zur Startseite"
             >
               <span
-                className="inline-block h-6 w-6 rounded bg-gradient-to-tr from-amber-300 to-purple-500"
+                className="inline-block h-6 w-6 rounded bg-gradient-to-tr from-amber-300 to-blue-500"
                 aria-hidden
               />
               <span className="bg-gradient-to-r from-white via-amber-200 to-white bg-clip-text text-transparent">
@@ -84,7 +84,7 @@ export default function Navbar() {
                   <span
                     className={`absolute left-3 right-3 -bottom-[2px] h-[2px] rounded-full transition-transform duration-300 origin-left ${
                       isActive(link.href)
-                        ? "bg-amber-300 scale-x-100"
+                        ? "bg-blue-800 scale-x-100"
                         : "bg-white/20 scale-x-0 group-hover:scale-x-100"
                     }`}
                     aria-hidden
