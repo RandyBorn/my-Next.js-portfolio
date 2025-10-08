@@ -18,7 +18,7 @@ const projects = [
     badge: "Mini-Game",
     description:
       "Kleines Browser-Game: Schere-Stein-Papier mit klarer UI und flüssigen Interaktionen umgesetzt in TypeScript. Perfekt, um schnelle Spielmechanik und State-Handling zu zeigen.",
-    stack: ["TypeScript", "JavaScript", "CSS"],
+    stack: ["HTML", "TypeScript", "JavaScript", "CSS"],
     cta: "Jetzt spielen",
   },
   {
