@@ -58,10 +58,10 @@ export default function Navbar() {
               aria-label="Zur Startseite"
             >
               <span
-                className="inline-block h-6 w-6 rounded bg-gradient-to-tr from-amber-300 to-blue-500"
+                className="inline-block h-3 w-3 rounded bg-gradient-to-tr from-pink-400 to-blue-500"
                 aria-hidden
               />
-              <span className="bg-gradient-to-r from-white via-amber-200 to-white bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-400 via-fuchsia-300 to-white bg-clip-text text-transparent">
                 Mein Portfolio
               </span>
             </Link>
@@ -76,7 +76,7 @@ export default function Navbar() {
                   className={`relative px-3 py-2 rounded-md transition-colors duration-200 outline-none focus-visible:ring-2 focus-visible:ring-amber-300 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900 ${
                     isActive(link.href)
                       ? "text-white"
-                      : "text-gray-300 hover:text-white"
+                      : "text-gray-300 hover:text-white , hover:bg-indigo-900"
                   }`}
                 >
                   {link.label}
