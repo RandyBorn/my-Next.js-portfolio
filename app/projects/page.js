@@ -4,6 +4,15 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
+    title: "Polls Umfrage Tool – Next.js + TypeScript",
+    href: "https://my-next-app-typescript-1nqk.vercel.app/",
+    badge: "Neu",
+    description:
+      "Umfragen ohne DB: Server Actions, API-Route fürs Voting, strikte TS-Typen und Zod-Validierung.",
+    stack: ["Next.js", "TypeScript", "Zod", "API Routes", "Server Actions"],
+    cta: "Live ansehen",
+  },
+  {
     title: "Projekt Liefrik – Lieferando-Klon",
     href: "https://liefrik.vercel.app/",
     badge: "Abschlussprojekt",

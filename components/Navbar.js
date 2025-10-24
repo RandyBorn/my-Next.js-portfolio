@@ -61,7 +61,7 @@ export default function Navbar() {
                 className="inline-block h-3 w-3 rounded bg-gradient-to-tr from-pink-400 to-blue-500"
                 aria-hidden
               />
-              <span className="bg-gradient-to-r from-blue-400 via-fuchsia-300 to-white bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-400 via-blue-200 to-fuchsia-300 bg-clip-text text-transparent">
                 Mein Portfolio
               </span>
             </Link>
