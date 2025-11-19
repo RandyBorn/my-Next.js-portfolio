@@ -4,6 +4,25 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
+    title:
+      "Freelancer Website (Demo-Projekt) Next.js + TypeScript + TailwindCSS",
+    href: "https://freelancer-zize.vercel.app/",
+    badge: "Freelancer",
+    description:
+      "Meine eigene Freelancer-Seite: Landingpage mit Paketen, Tech-Stack und Kontakt klar strukturiert und auf Conversion optimiert. Schnell, responsiv & modern.",
+    stack: ["Next.js", "TypeScript", "TailwindCSS"],
+    cta: "Live ansehen",
+  },
+  {
+    title: "D07 Movie & TV DB – Film- & Serienplattform",
+    href: "https://movie-tv-db-seven.vercel.app/",
+    badge: "Movie App",
+    description:
+      "Web-App zum Entdecken von Filmen & Serien: Startseite mit Hero-Section, beliebten Inhalten und strukturierten Detailinfos. Fokus auf klare UI, schnelle Orientierung und saubere Komponentenstruktur.",
+    stack: ["Next.js", "TypeScript", "TailwindCSS", "OMDb API"],
+    cta: "Live ansehen",
+  },
+  {
     title: "Polls Umfrage Tool – Next.js + TypeScript",
     href: "https://my-next-app-typescript-1nqk.vercel.app/",
     badge: "Neu",
@@ -17,7 +36,7 @@ const projects = [
     href: "https://liefrik.vercel.app/",
     badge: "Abschlussprojekt",
     description:
-      "E2E Essensbestell‑Plattform: Restaurants anlegen, Speisekarten anzeigen, Warenkorb & Checkout, Benutzer‑Auth (Rollen: Admin/User), Bestell‑ und Admin‑Verwaltung.",
+      "E2E Essensbestell-Plattform: Restaurants anlegen, Speisekarten anzeigen, Warenkorb & Checkout, Benutzer-Auth (Rollen: Admin/User), Bestell- und Admin-Verwaltung.",
     stack: ["Next.js", "React", "Node.js", "Express", "MongoDB", "JWT"],
     cta: "Live ansehen",
   },
@@ -34,7 +53,7 @@ const projects = [
     title: "Globale Themen Projekt",
     href: "https://globale-themen.vercel.app/",
     description:
-      "Moderne HTML/CSS‑Seite über globale Herausforderungen (Umwelt, Bildung, Gesundheit) mit Kontaktformular und sanften Scroll‑Animationen.",
+      "Moderne HTML/CSS-Seite über globale Herausforderungen (Umwelt, Bildung, Gesundheit) mit Kontaktformular und sanften Scroll-Animationen.",
     stack: ["HTML", "CSS", "JavaScript"],
     cta: "Live ansehen",
   },
@@ -42,7 +61,7 @@ const projects = [
     title: "Auto Next.js Projekt",
     href: "https://auto-nextjs-project-ebon.vercel.app/",
     description:
-      "Responsives Next.js‑Template mit TailwindCSS – optimiert für Performance, ideal als Produkt‑/Showcase‑Basis.",
+      "Responsives Next.js-Template mit TailwindCSS – optimiert für Performance, ideal als Produkt-/Showcase-Basis.",
     stack: ["Next.js", "TailwindCSS"],
     cta: "Live ansehen",
   },
@@ -50,7 +69,7 @@ const projects = [
     title: "Jobportal Backend API",
     href: "https://backend-test-gbj6.onrender.com/",
     description:
-      "REST‑API für ein Jobportal (Node.js/Express/MongoDB). Unternehmen posten Jobs, Bewerbende bewerben sich. Sichtbar über API‑Clients wie Postman.",
+      "REST-API für ein Jobportal (Node.js/Express/MongoDB). Unternehmen posten Jobs, Bewerbende bewerben sich. Sichtbar über API-Clients wie Postman.",
     stack: ["Node.js", "Express", "MongoDB", "REST"],
     cta: "API öffnen",
   },
@@ -58,7 +77,7 @@ const projects = [
     title: "Fullstack Book Tracker",
     href: "https://fullstack-frontend-backend-book-tra.vercel.app/",
     description:
-      "React‑Frontend + Express‑Backend mit Benutzer‑Auth und Buchverwaltung. Responsiv und auf Performance getrimmt.",
+      "React-Frontend + Express-Backend mit Benutzer-Auth und Buchverwaltung. Responsiv und auf Performance getrimmt.",
     stack: ["React", "Node.js", "Express", "MongoDB", "JWT"],
     cta: "Live ansehen",
   },
@@ -66,7 +85,7 @@ const projects = [
     title: "Projekt GYM FIT",
     href: "https://projekt-bay-eight.vercel.app/",
     description:
-      "Kreative One‑Pager‑Webapp mit Fokus auf klares Layout, saubere Struktur und schnelle Ladezeiten – ideal für Fitness‑Studios.",
+      "Kreative One-Pager-Webapp mit Fokus auf klares Layout, saubere Struktur und schnelle Ladezeiten – ideal für Fitness-Studios.",
     stack: ["HTML", "CSS"],
     cta: "Live ansehen",
   },
@@ -173,9 +192,9 @@ export default function ProjectsPage() {
             Projekte, die zeigen, wie ich Produkte baue
           </h2>
           <p className="mt-3 text-sm md:text-base text-white/70 max-w-2xl">
-            Von Full‑Stack‑Apps mit Auth & Bestell‑Flow bis hin zu API‑Services
-            und performanten Frontends. Fokus: saubere Architektur, Developer‑UX
-            und reale Use‑Cases.
+            Von Full-Stack-Apps mit Auth & Bestell-Flow bis hin zu API-Services
+            und performanten Frontends. Fokus: saubere Architektur, Developer-UX
+            und reale Use-Cases.
           </p>
         </motion.header>
 
