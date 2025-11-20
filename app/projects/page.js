@@ -14,7 +14,7 @@ const projects = [
     cta: "Live ansehen",
   },
   {
-    title: "D07 Movie & TV DB – Film- & Serienplattform",
+    title: "D07 Movie & TV DB Film- & Serienplattform",
     href: "https://movie-tv-db-seven.vercel.app/",
     badge: "Movie App",
     description:
@@ -23,7 +23,7 @@ const projects = [
     cta: "Live ansehen",
   },
   {
-    title: "Polls Umfrage Tool – Next.js + TypeScript",
+    title: "Polls Umfrage Tool Next.js + TypeScript",
     href: "https://my-next-app-typescript-1nqk.vercel.app/",
     badge: "Neu",
     description:
@@ -32,16 +32,25 @@ const projects = [
     cta: "Live ansehen",
   },
   {
-    title: "Projekt Liefrik – Lieferando-Klon",
+    title: "Projekt Liefrik - Lieferando-Klon",
     href: "https://liefrik.vercel.app/",
-    badge: "Abschlussprojekt",
+    badge: "Fullstack Abschlussprojekt",
     description:
-      "E2E Essensbestell-Plattform: Restaurants anlegen, Speisekarten anzeigen, Warenkorb & Checkout, Benutzer-Auth (Rollen: Admin/User), Bestell- und Admin-Verwaltung.",
+      "Fullstack Essensbestell-Plattform im Stil von Lieferando: Restaurants und Menüs verwalten, Speisekarten anzeigen, Warenkorb & Checkout, geschützte Bereiche mit Rollen (Admin/User), Bestellübersicht inkl. Statusverwaltung sowie eigene REST-API mit MongoDB-Anbindung.",
     stack: ["Next.js", "React", "Node.js", "Express", "MongoDB", "JWT"],
     cta: "Live ansehen",
   },
   {
-    title: "Schere, Stein, Papier – Mini-Game",
+    title: "Habit & Goal Tracker App",
+    href: "https://habit-goal-tracker-app.vercel.app/",
+    badge: "Produktivität",
+    description:
+      "Tracke deine täglichen Gewohnheiten und langfristigen Ziele. Mit Next.js und React umgesetzt Fokus auf klare UI, einfache Bedienung und motivierendes Nutzererlebnis.",
+    stack: ["Next.js", "React", "TailwindCSS"],
+    cta: "Live ansehen",
+  },
+  {
+    title: "Schere, Stein, Papier - Mini-Game",
     href: "https://schere-stein-papier.vercel.app/",
     badge: "Mini-Game",
     description:
