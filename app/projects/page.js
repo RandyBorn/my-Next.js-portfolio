@@ -13,6 +13,7 @@ const projects = [
     stack: ["Next.js", "TypeScript", "TailwindCSS"],
     cta: "Live ansehen",
   },
+
   {
     title: "D07 Movie & TV DB Film- & Serienplattform",
     href: "https://movie-tv-db-seven.vercel.app/",
@@ -22,6 +23,7 @@ const projects = [
     stack: ["Next.js", "TypeScript", "TailwindCSS", "OMDb API"],
     cta: "Live ansehen",
   },
+
   {
     title: "Polls Umfrage Tool Next.js + TypeScript",
     href: "https://my-next-app-typescript-1nqk.vercel.app/",
@@ -31,6 +33,7 @@ const projects = [
     stack: ["Next.js", "TypeScript", "Zod", "API Routes", "Server Actions"],
     cta: "Live ansehen",
   },
+
   {
     title: "Projekt Liefrik - Lieferando-Klon",
     href: "https://liefrik.vercel.app/",
@@ -40,6 +43,7 @@ const projects = [
     stack: ["Next.js", "React", "Node.js", "Express", "MongoDB", "JWT"],
     cta: "Live ansehen",
   },
+
   {
     title: "Habit & Goal Tracker App",
     href: "https://habit-goal-tracker-app.vercel.app/",
@@ -49,6 +53,7 @@ const projects = [
     stack: ["Next.js", "React", "TailwindCSS"],
     cta: "Live ansehen",
   },
+
   {
     title: "Schere, Stein, Papier - Mini-Game",
     href: "https://schere-stein-papier.vercel.app/",
@@ -58,6 +63,7 @@ const projects = [
     stack: ["HTML", "TypeScript", "JavaScript", "CSS"],
     cta: "Jetzt spielen",
   },
+
   {
     title: "Globale Themen Projekt",
     href: "https://globale-themen.vercel.app/",
@@ -66,14 +72,16 @@ const projects = [
     stack: ["HTML", "CSS", "JavaScript"],
     cta: "Live ansehen",
   },
+
   {
     title: "Auto Next.js Projekt",
     href: "https://auto-nextjs-project-ebon.vercel.app/",
     description:
-      "Responsives Next.js-Template mit TailwindCSS – optimiert für Performance, ideal als Produkt-/Showcase-Basis.",
+      "Responsives Next.js-Template mit TailwindCSS optimiert für Performance, ideal als Produkt-/Showcase-Basis.",
     stack: ["Next.js", "TailwindCSS"],
     cta: "Live ansehen",
   },
+
   {
     title: "Jobportal Backend API",
     href: "https://backend-test-gbj6.onrender.com/",
@@ -82,6 +90,7 @@ const projects = [
     stack: ["Node.js", "Express", "MongoDB", "REST"],
     cta: "API öffnen",
   },
+
   {
     title: "Fullstack Book Tracker",
     href: "https://fullstack-frontend-backend-book-tra.vercel.app/",
@@ -90,11 +99,12 @@ const projects = [
     stack: ["React", "Node.js", "Express", "MongoDB", "JWT"],
     cta: "Live ansehen",
   },
+
   {
     title: "Projekt GYM FIT",
     href: "https://projekt-bay-eight.vercel.app/",
     description:
-      "Kreative One-Pager-Webapp mit Fokus auf klares Layout, saubere Struktur und schnelle Ladezeiten – ideal für Fitness-Studios.",
+      "Kreative One-Pager-Webapp mit Fokus auf klares Layout, saubere Struktur und schnelle Ladezeiten ideal für Fitness-Studios.",
     stack: ["HTML", "CSS"],
     cta: "Live ansehen",
   },

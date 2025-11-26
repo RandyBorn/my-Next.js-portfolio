@@ -3,12 +3,36 @@ import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import "./globals.css";
 
+// --- Cookie Helpers ---
+function setCookie(name, value, days) {
+  const date = new Date();
+  date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+  const expires = "expires=" + date.toUTCString();
+  document.cookie = `${name}=${value};${expires};path=/`;
+}
+
+function getCookie(name) {
+  const cname = name + "=";
+  const decodedCookie = decodeURIComponent(document.cookie);
+  const parts = decodedCookie.split(";");
+  for (let part of parts) {
+    const c = part.trim();
+    if (c.indexOf(cname) === 0) {
+      return c.substring(cname.length);
+    }
+  }
+  return "";
+}
+
 export default function HomePage() {
   // --- Typing Text ---
   const fullText =
     "Welcome to my portfolio! I am a passionate web developer from Nordrhein-Westfalen (Oberhausen), specializing in modern JavaScript frameworks, Node.js, and Tailwind CSS. Explore my skills, projects, and get to know more about me.";
   const [displayedText, setDisplayedText] = useState("");
   const [isDone, setIsDone] = useState(false);
+
+  // --- Cookie Banner State ---
+  const [showCookieBanner, setShowCookieBanner] = useState(false);
 
   useEffect(() => {
     const reduceMotion =
@@ -23,7 +47,7 @@ export default function HomePage() {
     }
 
     let index = 0;
-    const speed = 35; // ms per char – snappier & professional
+    const speed = 35;
     const interval = setInterval(() => {
       setDisplayedText(fullText.slice(0, index + 1));
       index++;
@@ -36,6 +60,20 @@ export default function HomePage() {
     return () => clearInterval(interval);
   }, [fullText]);
 
+  // --- Cookie Banner: beim Laden prüfen, ob schon zugestimmt wurde ---
+  useEffect(() => {
+    if (typeof document === "undefined") return;
+    const consent = getCookie("cookie_consent");
+    if (consent !== "true") {
+      setShowCookieBanner(true);
+    }
+  }, []);
+
+  const handleAcceptCookies = () => {
+    setCookie("cookie_consent", "true", 365); // 1 Jahr
+    setShowCookieBanner(false);
+  };
+
   // --- Data for Skills/Tools ---
   const tools = useMemo(
     () => [
@@ -45,11 +83,11 @@ export default function HomePage() {
       },
       {
         title: "CSS3 / SASS",
-        body: "Modulares Styling, Variablen & Mixins für wartbare Designs. Saubere Layouts, flexible Typografie, konsistente Spacing‑Skala.",
+        body: "Modulares Styling, Variablen & Mixins für wartbare Designs. Saubere Layouts, flexible Typografie, konsistente Spacing-Skala.",
       },
       {
         title: "JavaScript ES6+",
-        body: "Moderne Spracheigenschaften für zuverlässige Interaktivität, State Management und robuste Frontend‑Logik.",
+        body: "Moderne Spracheigenschaften für zuverlässige Interaktivität, State Management und robuste Frontend-Logik.",
       },
       {
         title: "React",
@@ -57,7 +95,7 @@ export default function HomePage() {
       },
       {
         title: "Node.js / Express",
-        body: "APIs und Serverlogik: Auth, Validierung, File‑Handling, Caching – sauber versionierte REST‑Endpunkte.",
+        body: "APIs und Serverlogik: Auth, Validierung, File-Handling, Caching – sauber versionierte REST-Endpunkte.",
       },
       {
         title: "MongoDB / Mongoose",
@@ -69,7 +107,7 @@ export default function HomePage() {
       },
       {
         title: "Git & GitHub",
-        body: "Versionskontrolle, Clean Branching, PR‑Reviews und CI‑Workflows für nachvollziehbare Releases.",
+        body: "Versionskontrolle, Clean Branching, PR-Reviews und CI-Workflows für nachvollziehbare Releases.",
       },
       {
         title: "Markdown",
@@ -77,11 +115,11 @@ export default function HomePage() {
       },
       {
         title: "Vercel / Netlify",
-        body: "Schnelles Hosting, Previews pro Branch, Edge‑Netzwerk und automatische Deployments.",
+        body: "Schnelles Hosting, Previews pro Branch, Edge-Netzwerk und automatische Deployments.",
       },
       {
         title: "Postman",
-        body: "API‑Tests, Collections, Environments – verlässliche Schnittstellen und reproduzierbare Requests.",
+        body: "API-Tests, Collections, Environments – verlässliche Schnittstellen und reproduzierbare Requests.",
       },
       {
         title: "VS Code",
@@ -120,7 +158,7 @@ export default function HomePage() {
             <Link
               href="/about"
               className="inline-flex items-center justify-center rounded-md bg-amber-300 px-5 py-2.5 font-semibold text-gray-900 shadow hover:bg-amber-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-300 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900"
-              aria-label="Zur Über‑mich‑Seite"
+              aria-label="Zur Über-mich-Seite"
             >
               Über mich
             </Link>
@@ -172,6 +210,23 @@ export default function HomePage() {
           </p>
         </div>
       </section>
+      {/* Cookie Banner */}
+      {showCookieBanner && (
+        <div className="fixed bottom-0 left-0 right-0 z-50 bg-slate-900/95 border-t border-white/10 backdrop-blur px-4 py-6 sm:py-8">
+          <div className="mx-auto max-w-5xl flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6 text-base sm:text-lg text-slate-100">
+            <p className="text-center sm:text-left leading-relaxed">
+              Diese Website verwendet Cookies, um sich deine Einstellungen zu
+              merken. Durch Klicken auf „OK“ stimmst du dem zu.
+            </p>
+            <button
+              onClick={handleAcceptCookies}
+              className="inline-flex items-center justify-center rounded-lg bg-amber-300 px-6 py-2.5 font-semibold text-slate-900 shadow-lg hover:bg-amber-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-300"
+            >
+              OK
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
