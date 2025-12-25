@@ -4,6 +4,16 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
+  title: "Creator Hub – SaaS MVP",
+  href: "https://creator-hub-saa-s-mvp-muhu.vercel.app/",
+  badge: "SaaS / MVP",
+  description:
+    "SaaS-MVP für Creator: modernes Dashboard, klare Nutzerführung und skalierbare Komponentenstruktur. Fokus auf Produktdenken, saubere UI und schnelle Iteration.",
+  stack: ["Next.js", "React", "TypeScript", "TailwindCSS"],
+  cta: "Live ansehen",
+},
+,
+  {
     title:
       "Freelancer Website (Demo-Projekt) Next.js + TypeScript + TailwindCSS",
     href: "https://freelancer-zize.vercel.app/",
