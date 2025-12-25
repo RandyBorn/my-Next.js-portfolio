@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-  title: "Creator Hub – SaaS MVP",
+  title: "Creator Hub SaaS MVP",
   href: "https://creator-hub-saa-s-mvp-muhu.vercel.app/",
   badge: "SaaS / MVP",
   description:
