@@ -24,31 +24,37 @@ export default function AboutPage() {
           <div className="p-6 md:p-8">
             <div className="flex flex-col md:flex-row items-start md:items-center gap-5 md:gap-8">
               {/* Avatar placeholder (optional) */}
-              <div className="shrink-0 hidden md:block">
-                <div
-                  className="h-20 w-20 rounded-full bg-gradient-to-tr from-amber-300/80 to-blue-900 ring-2 ring-white/30"
-                  aria-hidden
-                />
-              </div>
+              <div
+                className="h-30 w-210 rounded-full ring-3 ring-white bg-cover bg-center"
+                style={{ backgroundImage: "url('/randy.jpg')" }}
+                aria-hidden
+              />
 
               <div className="grow">
                 <p className="text-lg leading-relaxed text-white/90">
-                  Ich bin 26 Jahre alt und komme aus Oberhausen. Nach meiner
-                  Ausbildung zum Glasverfahrensmechaniker habe ich meine
-                  Leidenschaft für Webentwicklung entdeckt.
-                </p>
-                <p className="text-lg leading-relaxed text-white/90 mt-4">
-                  Aktuell bilde ich mich zum Full‑Stack‑Webentwickler am Digital
-                  Career Institute in Düsseldorf weiter. Ich arbeite mit
-                  modernen Technologien wie
+                  Ich bin Randy, 26 Jahre alt und komme aus Oberhausen. Nach
+                  meiner Ausbildung zum Glasverfahrensmechaniker habe ich
+                  gemerkt, dass ich es liebe, Dinge zu gestalten nur diesmal
+                  digital. Meine Begeisterung für Webentwicklung hat mich dazu
+                  motiviert, mich intensiv zum Full‑Stack-Webentwickler
+                  weiterzubilden. Heute bin ich bereit, mein Wissen in die
+                  Praxis umzusetzen. Ich arbeite mit modernen Technologien wie{" "}
                   <span className="font-semibold">
                     {" "}
-                    React, Node.js, MongoDB
+                    React, Node.js, MongoDB oder Tailwind CSS{" "}
                   </span>{" "}
-                  und
-                  <span className="font-semibold"> Tailwind CSS</span>.
-                  Analytisches Problemlösen und Teamarbeit machen mir viel
-                  Freude.
+                  und habe besonders Freude daran, knifflige Probleme zu lösen
+                  und kreative Lösungen zu entwickeln.
+                </p>
+                <p className="text-lg leading-relaxed text-white/90 mt-4">
+                  <span className="font-semibold"> Was mich antreibt? </span>{" "}
+                  Neues lernen, Herausforderungen anpacken und gemeinsam mit
+                  einem Team Ideen Wirklichkeit werden zu lassen. Ich glaube
+                  daran, dass gute Software nicht nur funktioniert, sondern auch
+                  Spaß machen kann sowohl beim Entwickeln als auch für die
+                  Nutzer. ich freue mich darauf, in einem motivierten Team zu
+                  arbeiten, meine Fähigkeiten einzubringen und Projekte von der
+                  Idee bis zur Umsetzung aktiv mitzugestalten.
                 </p>
               </div>
             </div>
