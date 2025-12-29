@@ -46,7 +46,7 @@ export default function AboutPage() {
                   und habe besonders Freude daran, knifflige Probleme zu lösen
                   und kreative Lösungen zu entwickeln.
                 </p>
-                <p className="text-lg leading-relaxed text-white/90 mt-4">
+                <p className="text-lg leading-relaxed text-white/95 mt-4">
                   <span className="font-semibold"> Was mich antreibt? </span>{" "}
                   Neues lernen, Herausforderungen anpacken und gemeinsam mit
                   einem Team Ideen Wirklichkeit werden zu lassen. Ich glaube
