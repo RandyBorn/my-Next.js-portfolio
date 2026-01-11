@@ -25,7 +25,13 @@ export default function AboutPage() {
             <div className="flex flex-col md:flex-row items-start md:items-center gap-5 md:gap-8">
               {/* Avatar placeholder (optional) */}
               <div
-                className="h-30 w-210 rounded-full ring-3 ring-white bg-cover bg-center"
+                className="
+    w-full max-w-[120px] aspect-square
+    md:w-210 md:aspect-auto md:h-30
+    rounded-full
+    ring-3 ring-white
+    bg-cover bg-center
+  "
                 style={{ backgroundImage: "url('/randy.jpg')" }}
                 aria-hidden
               />
